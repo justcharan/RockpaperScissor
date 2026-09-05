@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Roack Paper Scissors</title>
+</head>
+<body>
+    <p>Roack Paper Scissors </p>
+    <button onclick="
+    const ran= Math.random()
+    let guess = ' ' ;
+    if(ran>=0 &&ran<1/3){
+        guess='Rock';
+    }
+    else if (ran>=1/3 &&ran<2/3){
+       guess='paper';
+    }
+    else{
+        guess='scissors';
+    }
+    console.log(guess);
+    let result='';
+  if(guess==='Rock'){
+    result='tie';
+  }else if( guess==='paper'){
+    result='You lose';
+  }else{
+    result='you win';
+  }
+alert (`you picked Rock, computer picked ${guess},${result}.`);
+    ">Rock</button>
+
+    <button onclick="
+    const ran= Math.random()
+    let guess = ' ' ;
+    if(ran<1/3){
+        guess='Rock';
+    }
+    else if (ran>=1/3 &&ran<2/3){
+       guess='paper';
+    }
+    else{
+        guess='scissors';
+    }
+    console.log(guess);
+    let result='';
+  if(guess==='paper'){
+    result='tie';
+  }else if( guess==='scissors'){
+    result='You lose';
+  }else{
+    result='you win';
+  }
+alert (`you picked paper, computer picked ${guess},${result}.`);"
+>paper</button>
+
+    <button onclick="
+    const ran= Math.random()
+    let guess = ' ' ;
+    if(ran>=0 &&ran<1/3){
+        guess='Rock';
+    }
+    else if (ran>=1/3 &&ran<2/3){
+       guess='paper';
+    }
+    else{
+        guess='scissors';
+    }
+    console.log(guess);
+    let result='';
+  if(guess==='scissors'){
+    result='tie';
+  }else if( guess==='Rock'){
+    result='You lose';
+  }else{
+    result='you win';
+  }
+alert (`you picked scissors, computer picked ${guess},${result}.`);"
+>Scissors</button>
+</body>
+</html>
